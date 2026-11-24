@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tecnologia assistiva – Acessibilidade para todos</title>
+<meta name="description" content="Recursos de tecnologia assistiva usados para acessar computadores e a Web: leitores de tela, linha Braille, ampliadores e teclados adaptados.">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/acessibilidade.js" defer></script>
+</head>
+<body>
+<ul class="atalhos" aria-label="Atalhos de navegação">
+  <li><a href="#conteudo">Ir para o conteúdo (Alt+1)</a></li>
+  <li><a href="#menu">Ir para o menu (Alt+2)</a></li>
+  <li><a href="#rodape">Ir para o rodapé (Alt+3)</a></li>
+</ul>
+<header class="topo">
+  <div class="barra" role="region" aria-label="Barra de acessibilidade">
+    <div class="miolo">
+      <p>Acessibilidade:</p>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+      <button type="button" id="btn-diminuir">Diminuir fonte</button>
+      <button type="button" id="btn-aumentar">Aumentar fonte</button>
+      <button type="button" id="btn-restaurar">Fonte normal</button>
+      <button type="button" id="btn-ouvir" hidden>Ouvir esta página</button>
+      <button type="button" id="btn-pausar" hidden>Pausar leitura</button>
+      <a href="acessibilidade-deste-site.html#atalhos">Atalhos de teclado</a>
+    </div>
+  </div>
+  <div class="miolo">
+    <p class="marca"><a href="index.html">Acessibilidade para todos</a></p>
+    <nav id="menu" aria-label="Menu principal" tabindex="-1">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="o-que-e-acessibilidade.html">O que é acessibilidade</a></li>
+        <li><a href="barreiras-e-deficiencias.html">Barreiras no acesso</a></li>
+        <li><a href="tecnologia-assistiva.html" aria-current="page">Tecnologia assistiva</a></li>
+        <li><a href="acessibilidade-no-dia-a-dia.html">No dia a dia</a></li>
+        <li><a href="acessibilidade-deste-site.html">Sobre este site</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<p id="aviso" class="sr-only" role="status" aria-live="polite"></p>
+<main id="conteudo" tabindex="-1">
+<div class="faixa-titulo">
+  <div class="miolo">
+    <h1>Tecnologia assistiva</h1>
+    <p class="lead">São os recursos que dão mais autonomia e independência às pessoas com deficiência, de uma bengala a um programa de computador.</p>
+  </div>
+</div>
+<div class="miolo">
+<nav class="sumario" id="sumario" aria-labelledby="t-sumario">
+  <h2 id="t-sumario">Neste texto</h2>
+  <ol>
+    <li><a href="#o-que-e">O que é tecnologia assistiva</a></li>
+    <li><a href="#leitores">Leitores de tela</a></li>
+    <li><a href="#braille">Linha Braille</a></li>
+    <li><a href="#ampliadores">Ampliadores de tela</a></li>
+    <li><a href="#teclados">Teclados e mouses adaptados</a></li>
+  </ol>
+</nav>
+
+<h2 id="o-que-e">O que é tecnologia assistiva</h2>
+<p>O termo é relativamente novo no Brasil. Ele reúne recursos que ajudam as pessoas com deficiência a viver com mais independência. Há artefatos simples e sistemas de computador bem complexos.</p>
+<ul>
+  <li>Bengalas e lupas eletrônicas.</li>
+  <li>Aparelhos auditivos, próteses e órteses.</li>
+  <li>Equipamentos de comunicação alternativa.</li>
+  <li>Programas e equipamentos para usar o computador.</li>
+</ul>
+<p>Neste site, o foco são os recursos que permitem o acesso ao computador e à Web.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="leitores">Leitores de tela</h2>
+<p>O leitor de tela é um programa usado principalmente por pessoas cegas. Ele captura o texto exibido na tela e o transforma em voz com um sintetizador. A pessoa controla tudo pelo teclado. Pessoas com baixa visão e com dislexia também o usam.</p>
+<h3>Como a navegação funciona</h3>
+<ul>
+  <li><strong>Ler a página inteira:</strong> a pessoa usa as setas do teclado.</li>
+  <li><strong>Ler os links:</strong> a pessoa usa a tecla <kbd>Tab</kbd>.</li>
+  <li><strong>Ler os títulos:</strong> a pessoa usa a tecla <kbd>H</kbd> e pula de título em título.</li>
+</ul>
+<p>É por isso que os títulos precisam ter hierarquia correta (<code>h1</code>, <code>h2</code>, <code>h3</code>) e os links precisam ter textos descritivos.</p>
+<div class="rolagem">
+<table>
+  <caption>Principais leitores de tela</caption>
+  <thead>
+    <tr><th scope="col">Leitor</th><th scope="col">Sistema</th><th scope="col">Custo</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">JAWS</th><td>Windows</td><td>Pago</td></tr>
+    <tr><th scope="row">NVDA</th><td>Windows</td><td>Gratuito</td></tr>
+    <tr><th scope="row">Virtual Vision</th><td>Windows</td><td>Pago</td></tr>
+    <tr><th scope="row">Orca</th><td>Linux</td><td>Gratuito</td></tr>
+    <tr><th scope="row">VoiceOver</th><td>Aparelhos da Apple</td><td>Já vem no aparelho</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Para experimentar, instale o <a href="https://www.nvaccess.org/">NVDA, leitor de tela gratuito para Windows</a> e tente navegar só com o teclado.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="braille">Linha Braille</h2>
+<p>A linha Braille é um equipamento ligado ao computador por cabo. Ela tem uma régua de células com pinos que sobem e descem e formam uma linha de texto da tela em Braille. É especialmente útil para pessoas com surdocegueira.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="ampliadores">Ampliadores de tela</h2>
+<p>São programas usados por pessoas com baixa visão. Eles aumentam a tela inteira ou só uma parte dela, como se fosse uma lupa.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="teclados">Teclados e mouses adaptados</h2>
+<p>Servem a pessoas com deficiência física ou mobilidade reduzida e oferecem outro jeito de usar as teclas e o mouse. Alguns exemplos:</p>
+<ul>
+  <li>Teclados com teclas mais afastadas ou mais próximas.</li>
+  <li>Teclado de lâminas e teclado virtual.</li>
+  <li>Acionadores que fazem o papel dos botões do mouse.</li>
+  <li>Mouse de sopro e mouse ocular.</li>
+</ul>
+<div class="destaque">
+  <p><strong>Importante:</strong> esses recursos não garantem o acesso sozinhos. A página também precisa ser projetada com acessibilidade.</p>
+</div>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+</div>
+</div>
+</main>
+<footer id="rodape" tabindex="-1">
+  <div class="miolo">
+    <p><strong>Acessibilidade para todos</strong> – trabalho do TDE de Programação WEB, feito por Brendha Bilharba Backes.</p>
+    <p>Textos baseados no material <em>eMAG Conteudista</em>, da Enap (Escola Nacional de Administração Pública).</p>
+    <p><a href="acessibilidade-deste-site.html">Sobre a acessibilidade deste site</a> e <a href="acessibilidade-deste-site.html#mapa">mapa do site</a>.</p>
+  </div>
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+</div>
+</body>
+</html>

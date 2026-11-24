@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barreiras no acesso – Acessibilidade para todos</title>
+<meta name="description" content="Principais barreiras que pessoas com deficiência encontram na Web e como evitá-las.">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/acessibilidade.js" defer></script>
+</head>
+<body>
+<ul class="atalhos" aria-label="Atalhos de navegação">
+  <li><a href="#conteudo">Ir para o conteúdo (Alt+1)</a></li>
+  <li><a href="#menu">Ir para o menu (Alt+2)</a></li>
+  <li><a href="#rodape">Ir para o rodapé (Alt+3)</a></li>
+</ul>
+<header class="topo">
+  <div class="barra" role="region" aria-label="Barra de acessibilidade">
+    <div class="miolo">
+      <p>Acessibilidade:</p>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+      <button type="button" id="btn-diminuir">Diminuir fonte</button>
+      <button type="button" id="btn-aumentar">Aumentar fonte</button>
+      <button type="button" id="btn-restaurar">Fonte normal</button>
+      <button type="button" id="btn-ouvir" hidden>Ouvir esta página</button>
+      <button type="button" id="btn-pausar" hidden>Pausar leitura</button>
+      <a href="acessibilidade-deste-site.html#atalhos">Atalhos de teclado</a>
+    </div>
+  </div>
+  <div class="miolo">
+    <p class="marca"><a href="index.html">Acessibilidade para todos</a></p>
+    <nav id="menu" aria-label="Menu principal" tabindex="-1">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="o-que-e-acessibilidade.html">O que é acessibilidade</a></li>
+        <li><a href="barreiras-e-deficiencias.html" aria-current="page">Barreiras no acesso</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="acessibilidade-no-dia-a-dia.html">No dia a dia</a></li>
+        <li><a href="acessibilidade-deste-site.html">Sobre este site</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<p id="aviso" class="sr-only" role="status" aria-live="polite"></p>
+<main id="conteudo" tabindex="-1">
+<div class="faixa-titulo">
+  <div class="miolo">
+    <h1>Barreiras no acesso à internet</h1>
+    <p class="lead">Cada grupo de pessoas encontra obstáculos diferentes na Web. Veja quais são e o que fazer para removê-los.</p>
+  </div>
+</div>
+<div class="miolo">
+<div class="texto">
+<nav class="sumario" id="sumario" aria-labelledby="t-sumario">
+  <h2 id="t-sumario">Neste texto</h2>
+  <ol>
+    <li><a href="#cegueira">Cegueira</a></li>
+    <li><a href="#baixa-visao">Baixa visão</a></li>
+    <li><a href="#daltonismo">Daltonismo</a></li>
+    <li><a href="#auditiva">Deficiência auditiva</a></li>
+    <li><a href="#fisica">Deficiência física ou mobilidade reduzida</a></li>
+    <li><a href="#intelectual">Deficiência intelectual</a></li>
+    <li><a href="#outros">Dislexia e <abbr title="Transtorno do Déficit de Atenção com Hiperatividade">TDAH</abbr></a></li>
+  </ol>
+</nav>
+<p>A Web tem forte apelo visual. Por isso, as pessoas com deficiência visual talvez enfrentem o maior número de barreiras. Conhecer as dificuldades de cada grupo é o primeiro passo para criar páginas melhores.</p>
+<h2 id="cegueira">Cegueira</h2>
+<p>A cegueira é a ausência total de resposta visual. Ela pode existir desde o nascimento ou surgir depois. Para usar o computador, as pessoas cegas costumam usar um leitor de tela e navegar pelo teclado.</p>
+<h3>Barreiras mais comuns</h3>
+<ul>
+  <li>Imagens sem descrição.</li>
+  <li>Vídeos sem alternativa em texto ou em som.</li>
+  <li>Funções que não funcionam pelo teclado.</li>
+  <li>Links mal descritos, como “clique aqui”.</li>
+  <li>Tabelas que não fazem sentido quando lidas em sequência.</li>
+  <li>Formulários com campos sem rótulo ou fora de ordem lógica.</li>
+</ul>
+<h3>Como evitar</h3>
+<p>Descreva as imagens no atributo <code>alt</code>, use links claros, deixe tudo acessível pelo teclado e rotule cada campo de formulário.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+<h2 id="baixa-visao">Baixa visão</h2>
+<p>A pessoa com baixa visão tem a visão comprometida nos dois olhos, mesmo com óculos ou lentes. Algumas conseguem ler textos grandes. Outras só percebem formas, cores e contrastes. Ela usa ampliadores de tela, recursos de alto contraste e, às vezes, leitores de tela.</p>
+<h3>Barreiras mais comuns</h3>
+<ul>
+  <li>Contraste ruim entre texto e fundo.</li>
+  <li>Letras com serifa ou decoradas.</li>
+  <li>Conteúdo que perde a função quando é ampliado.</li>
+  <li>Fundos decorados e combinações de cores muito brilhantes.</li>
+</ul>
+<h3>Como evitar</h3>
+<p>Use letras simples, sem itálico, com contraste mínimo de 4,5:1 e permita aumentar o texto. Este site tem botões para isso na barra do topo.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+<h2 id="daltonismo">Daltonismo</h2>
+<p>O daltonismo, ou cegueira cromática, é a dificuldade de diferenciar cores. O tipo mais comum é confundir vermelho e verde. Ele é bem mais frequente em homens.</p>
+<h3>Barreiras mais comuns</h3>
+<ul>
+  <li>Cor usada como único jeito de destacar um texto.</li>
+  <li>Contraste inadequado entre a cor da letra e a do fundo.</li>
+</ul>
+<h3>Como evitar</h3>
+<p>Nunca use só a cor para passar uma informação. Acrescente texto, sublinhado ou um símbolo. Exemplo: em vez de só pintar o item de vermelho, escreva “indisponível”.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+<h2 id="auditiva">Deficiência auditiva</h2>
+<p>A deficiência auditiva tem vários graus, do leve ao profundo. Nem toda pessoa surda usa <abbr title="Língua Brasileira de Sinais">Libras</abbr>, e nem toda pessoa surda fala. Algumas leem lábios, outras leem e escrevem em português.</p>
+<h3>Barreiras mais comuns</h3>
+<ul>
+  <li>Vídeos sem legenda e sem Libras.</li>
+  <li>Áudios sem transcrição em texto.</li>
+  <li>Textos com linguagem complicada.</li>
+</ul>
+<h3>Como evitar</h3>
+<p>Coloque legendas nos vídeos, ofereça a transcrição dos áudios e escreva em linguagem clara. Quando possível, inclua uma janela de Libras. Este site usa o VLibras para traduzir o texto da página.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+<h2 id="fisica">Deficiência física ou mobilidade reduzida</h2>
+<p>A deficiência física altera parte do corpo e afeta uma função física. A mobilidade reduzida pode ser permanente ou temporária, como um braço engessado. Essas pessoas podem usar mouses e teclados adaptados.</p>
+<h3>Barreiras mais comuns</h3>
+<ul>
+  <li>Atividades com limite de tempo.</li>
+  <li>Várias janelas abrindo ao mesmo tempo.</li>
+  <li>Funções que não funcionam pelo teclado.</li>
+</ul>
+<h3>Como evitar</h3>
+<p>Dê tempo suficiente, não abra janelas sem avisar e garanta que todos os botões e links funcionem com a tecla <kbd>Tab</kbd>.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+<h2 id="intelectual">Deficiência intelectual</h2>
+<p>A pessoa com deficiência intelectual tem o funcionamento intelectual abaixo da média desde antes dos 18 anos. Pode ter dificuldade de atenção, compreensão, memória e raciocínio. O termo “deficiência mental” foi substituído por “deficiência intelectual”.</p>
+<h3>Barreiras mais comuns</h3>
+<ul>
+  <li>Páginas sem organização clara ou sem consistência.</li>
+  <li>Linguagem complexa sem necessidade.</li>
+  <li>Parágrafos muito longos.</li>
+  <li>Siglas e palavras incomuns sem explicação.</li>
+  <li>Imagens piscantes ou sons que causam desconforto.</li>
+</ul>
+<h3>Como evitar</h3>
+<p>Escreva frases curtas, um assunto por parágrafo, explique siglas na primeira vez e mantenha o mesmo padrão em todas as páginas.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+<h2 id="outros">Dislexia e TDAH</h2>
+<p>A dislexia dificulta decodificar símbolos, ler e escrever, e deixa a leitura mais lenta. Muitas pessoas disléxicas entendem melhor ouvindo o texto e usam leitores de tela. O TDAH envolve desatenção, hiperatividade e impulsividade. Estudos indicam sintomas marcantes em 2% a 5% das crianças e adolescentes e em 2% a 4% dos adultos.</p>
+<h3>Barreiras mais comuns</h3>
+<ul>
+  <li>Falta de coerência na organização do conteúdo.</li>
+  <li>Parágrafos longos e texto justificado.</li>
+  <li>Fontes com serifa ou decoradas.</li>
+  <li>Imagens piscantes e elementos que tiram a atenção.</li>
+</ul>
+<h3>Como evitar</h3>
+<p>Alinhe o texto à esquerda, use fonte simples e organize o conteúdo em blocos pequenos com títulos claros. Idosos e pessoas com dificuldade de concentração também ganham com isso.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+</div>
+</div>
+</main>
+<footer id="rodape" tabindex="-1">
+  <div class="miolo">
+    <p><strong>Acessibilidade para todos</strong> – trabalho do TDE de Programação WEB, feito por Brendha Bilharba Backes.</p>
+    <p>Textos baseados no material <em>eMAG Conteudista</em>, da Enap (Escola Nacional de Administração Pública).</p>
+    <p><a href="acessibilidade-deste-site.html">Sobre a acessibilidade deste site</a> e <a href="acessibilidade-deste-site.html#mapa">mapa do site</a>.</p>
+  </div>
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+</div>
+</body>
+</html>

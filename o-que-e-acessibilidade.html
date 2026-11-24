@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O que é acessibilidade – Acessibilidade para todos</title>
+<meta name="description" content="Conceito de acessibilidade na Web, sua importância, a legislação brasileira e os quatro princípios da WCAG.">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/acessibilidade.js" defer></script>
+</head>
+<body>
+<ul class="atalhos" aria-label="Atalhos de navegação">
+  <li><a href="#conteudo">Ir para o conteúdo (Alt+1)</a></li>
+  <li><a href="#menu">Ir para o menu (Alt+2)</a></li>
+  <li><a href="#rodape">Ir para o rodapé (Alt+3)</a></li>
+</ul>
+<header class="topo">
+  <div class="barra" role="region" aria-label="Barra de acessibilidade">
+    <div class="miolo">
+      <p>Acessibilidade:</p>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+      <button type="button" id="btn-diminuir">Diminuir fonte</button>
+      <button type="button" id="btn-aumentar">Aumentar fonte</button>
+      <button type="button" id="btn-restaurar">Fonte normal</button>
+      <button type="button" id="btn-ouvir" hidden>Ouvir esta página</button>
+      <button type="button" id="btn-pausar" hidden>Pausar leitura</button>
+      <a href="acessibilidade-deste-site.html#atalhos">Atalhos de teclado</a>
+    </div>
+  </div>
+  <div class="miolo">
+    <p class="marca"><a href="index.html">Acessibilidade para todos</a></p>
+    <nav id="menu" aria-label="Menu principal" tabindex="-1">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="o-que-e-acessibilidade.html" aria-current="page">O que é acessibilidade</a></li>
+        <li><a href="barreiras-e-deficiencias.html">Barreiras no acesso</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="acessibilidade-no-dia-a-dia.html">No dia a dia</a></li>
+        <li><a href="acessibilidade-deste-site.html">Sobre este site</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<p id="aviso" class="sr-only" role="status" aria-live="polite"></p>
+<main id="conteudo" tabindex="-1">
+<div class="faixa-titulo">
+  <div class="miolo">
+    <h1>O que é acessibilidade</h1>
+    <p class="lead">Acessibilidade vai além das rampas: ela garante o acesso à informação e à comunicação para todas as pessoas.</p>
+  </div>
+</div>
+<div class="miolo">
+<nav class="sumario" id="sumario" aria-labelledby="t-sumario">
+  <h2 id="t-sumario">Neste texto</h2>
+  <ol>
+    <li><a href="#conceito">Conceito</a></li>
+    <li><a href="#importancia">Por que é importante</a></li>
+    <li><a href="#principios">Os quatro princípios da WCAG</a></li>
+    <li><a href="#leis">Leis e normas</a></li>
+  </ol>
+</nav>
+
+<h2 id="conceito">Conceito</h2>
+<p>Muita gente associa acessibilidade apenas à eliminação de barreiras arquitetônicas, como escadas sem rampa. Hoje o conceito é mais amplo. Ele envolve a qualidade de vida de todas as pessoas e o acesso à informação e à comunicação.</p>
+<p>Veja a diferença entre os dois mundos:</p>
+<ul>
+  <li><strong>Mundo físico:</strong> o prédio tem rampas e a pessoa com deficiência física entra de cadeira de rodas.</li>
+  <li><strong>Mundo virtual:</strong> o sítio usa código acessível e a pessoa cega navega com um leitor de tela.</li>
+</ul>
+<div class="destaque">
+  <p>A acessibilidade na Web exige que sítios e portais sejam projetados para que todas as pessoas possam <strong>perceber, entender, navegar e interagir</strong> com as páginas.</p>
+</div>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="importancia">Por que é importante</h2>
+<p>Para quem não tem limitações, navegar na Web é rápido: usa o mouse, enxerga a tela e assiste a vídeos. Agora imagine não poder usar o mouse, não enxergar a tela ou não ouvir o áudio de um vídeo. A navegação deixa de ser simples.</p>
+<h3>Os números</h3>
+<p>Segundo o Censo do IBGE de 2010, o Brasil tinha cerca de 190 milhões de habitantes e 45,6 milhões de pessoas com deficiência. Isso representa 23,9% da população. Uma pessoa pode ter mais de uma deficiência, por isso os grupos abaixo se sobrepõem.</p>
+<ul>
+  <li>Deficiência visual: 35,5 milhões.</li>
+  <li>Deficiência física: 13,3 milhões.</li>
+  <li>Deficiência auditiva: 9,7 milhões.</li>
+  <li>Deficiência intelectual: 2,7 milhões.</li>
+</ul>
+<h3>Quem mais se beneficia</h3>
+<p>Páginas acessíveis também ajudam pessoas com deficiência temporária, pessoas idosas, quem usa o celular e quem tem medo de usar a internet. Elas ainda aparecem melhor nos buscadores e funcionam em mais aplicativos.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="principios">Os quatro princípios da WCAG</h2>
+<p>A <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> é o principal documento internacional de recomendações de acessibilidade. Ela foi criada pelo W3C e organiza as regras em quatro princípios.</p>
+<figure>
+  <img src="imagens/principios-wcag.svg" width="800" height="260" alt="Quadro com os quatro princípios da WCAG: perceptível, operável, compreensível e robusto.">
+  <figcaption>Figura 1. Os quatro princípios da WCAG. A descrição completa está na lista abaixo.</figcaption>
+</figure>
+<ul>
+  <li><strong>Perceptível:</strong> a informação precisa ser apresentada de formas que a pessoa consiga perceber. Exemplo: texto alternativo em imagens e legendas em vídeos.</li>
+  <li><strong>Operável:</strong> todas as funções precisam funcionar pelo teclado e dar tempo suficiente para a pessoa agir.</li>
+  <li><strong>Compreensível:</strong> o texto deve ser legível e as páginas devem funcionar de modo previsível.</li>
+  <li><strong>Robusto:</strong> o conteúdo precisa funcionar em diferentes navegadores e em tecnologias assistivas.</li>
+</ul>
+<p>Cada critério tem um nível de conformidade: A, AA ou AAA. O nível AA torna o sítio acessível para a maioria das pessoas na maior parte das situações.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="leis">Leis e normas</h2>
+<p>No Brasil, a acessibilidade digital tem base em várias leis. Os links abaixo levam a outros sítios.</p>
+<ul>
+  <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm">Decreto nº 5.296, de 2004</a>: trata do acesso à informação e à comunicação.</li>
+  <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm">Decreto nº 6.949, de 2009</a>: promulga a Convenção sobre os Direitos das Pessoas com Deficiência, da ONU.</li>
+  <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm">Lei de Acesso à Informação (Lei nº 12.527, de 2011)</a>.</li>
+  <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">Lei Brasileira de Inclusão (Lei nº 13.146, de 2015)</a>, também chamada de Estatuto da Pessoa com Deficiência.</li>
+  <li>Portaria nº 3, de 2007: tornou obrigatório o <abbr title="Modelo de Acessibilidade em Governo Eletrônico">eMAG</abbr> nos sítios do governo federal.</li>
+</ul>
+<p>Para conhecer as diretrizes internacionais, consulte a <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">página da WCAG no sítio do W3C</a>.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+</div>
+</div>
+</main>
+<footer id="rodape" tabindex="-1">
+  <div class="miolo">
+    <p><strong>Acessibilidade para todos</strong> – trabalho do TDE de Programação WEB, feito por Brendha Bilharba Backes.</p>
+    <p>Textos baseados no material <em>eMAG Conteudista</em>, da Enap (Escola Nacional de Administração Pública).</p>
+    <p><a href="acessibilidade-deste-site.html">Sobre a acessibilidade deste site</a> e <a href="acessibilidade-deste-site.html#mapa">mapa do site</a>.</p>
+  </div>
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+</div>
+</body>
+</html>

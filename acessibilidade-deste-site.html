@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre este site – Acessibilidade para todos</title>
+<meta name="description" content="Declaração de acessibilidade, recursos da barra de acessibilidade, atalhos de teclado e mapa do site.">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/acessibilidade.js" defer></script>
+</head>
+<body>
+<ul class="atalhos" aria-label="Atalhos de navegação">
+  <li><a href="#conteudo">Ir para o conteúdo (Alt+1)</a></li>
+  <li><a href="#menu">Ir para o menu (Alt+2)</a></li>
+  <li><a href="#rodape">Ir para o rodapé (Alt+3)</a></li>
+</ul>
+<header class="topo">
+  <div class="barra" role="region" aria-label="Barra de acessibilidade">
+    <div class="miolo">
+      <p>Acessibilidade:</p>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+      <button type="button" id="btn-diminuir">Diminuir fonte</button>
+      <button type="button" id="btn-aumentar">Aumentar fonte</button>
+      <button type="button" id="btn-restaurar">Fonte normal</button>
+      <button type="button" id="btn-ouvir" hidden>Ouvir esta página</button>
+      <button type="button" id="btn-pausar" hidden>Pausar leitura</button>
+      <a href="acessibilidade-deste-site.html#atalhos">Atalhos de teclado</a>
+    </div>
+  </div>
+  <div class="miolo">
+    <p class="marca"><a href="index.html">Acessibilidade para todos</a></p>
+    <nav id="menu" aria-label="Menu principal" tabindex="-1">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="o-que-e-acessibilidade.html">O que é acessibilidade</a></li>
+        <li><a href="barreiras-e-deficiencias.html">Barreiras no acesso</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="acessibilidade-no-dia-a-dia.html">No dia a dia</a></li>
+        <li><a href="acessibilidade-deste-site.html" aria-current="page">Sobre este site</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<p id="aviso" class="sr-only" role="status" aria-live="polite"></p>
+<main id="conteudo" tabindex="-1">
+<div class="faixa-titulo">
+  <div class="miolo">
+    <h1>Acessibilidade deste site</h1>
+    <p class="lead">Veja como usar os recursos da barra de acessibilidade, os atalhos de teclado e o que foi feito para o site seguir o eMAG e a WCAG.</p>
+  </div>
+</div>
+<div class="miolo">
+<div class="texto">
+<nav class="sumario" id="sumario" aria-labelledby="t-sumario">
+  <h2 id="t-sumario">Neste texto</h2>
+  <ol>
+    <li><a href="#recursos">Recursos da barra de acessibilidade</a></li>
+    <li><a href="#atalhos">Atalhos de teclado</a></li>
+    <li><a href="#praticas">Como apliquei o eMAG neste site</a></li>
+    <li><a href="#avaliar">Como avaliar a acessibilidade</a></li>
+    <li><a href="#mapa">Mapa do site</a></li>
+  </ol>
+</nav>
+
+<h2 id="recursos">Recursos da barra de acessibilidade</h2>
+<ul>
+  <li><strong>Alto contraste:</strong> muda para fundo preto, letras brancas e links amarelos.</li>
+  <li><strong>Diminuir fonte, Aumentar fonte e Fonte normal:</strong> mudam o tamanho do texto em seis níveis, de 87,5% a 200%.</li>
+  <li><strong>Ouvir esta página:</strong> o navegador lê o texto em voz alta. Você pode pausar e parar a leitura quando quiser. A leitura nunca começa sozinha.</li>
+  <li><strong>VLibras:</strong> o botão azul no canto da tela abre um tradutor do texto para Libras. Ele é mantido pelo governo federal e precisa de internet.</li>
+</ul>
+<p>O site lembra a sua escolha de contraste e de tamanho de letra nas próximas páginas.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="atalhos">Atalhos de teclado</h2>
+<p>Os atalhos usam a tecla <kbd>Alt</kbd> junto com um número. No Firefox, use <kbd>Alt</kbd> + <kbd>Shift</kbd> + número. No Mac, use <kbd>Option</kbd> + número.</p>
+<div class="rolagem">
+<table>
+  <caption>Atalhos disponíveis em todas as páginas</caption>
+  <thead>
+    <tr><th scope="col">Atalho</th><th scope="col">O que faz</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>1</kbd></th><td>Vai para o conteúdo principal</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>2</kbd></th><td>Vai para o menu</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>3</kbd></th><td>Vai para o rodapé</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>4</kbd></th><td>Liga ou desliga o alto contraste</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>5</kbd></th><td>Aumenta a fonte</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>6</kbd></th><td>Diminui a fonte</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>7</kbd></th><td>Volta a fonte ao tamanho normal</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>8</kbd></th><td>Começa ou para a leitura em voz alta</td></tr>
+    <tr><th scope="row"><kbd>Alt</kbd> + <kbd>0</kbd></th><td>Abre esta página</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Também funcionam as teclas de sempre: <kbd>Tab</kbd> para avançar entre links e botões, <kbd>Shift</kbd> + <kbd>Tab</kbd> para voltar e <kbd>Enter</kbd> para ativar.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="praticas">Como apliquei o eMAG neste site</h2>
+<p>Escolhi tons claros para o site, mas cor bonita não basta: ela precisa ser lida por todo mundo. Por isso fui conferindo cada decisão com as regras do eMAG. Estas são as cinco que mais pesaram, cada uma com o erro comum e o que usei no código.</p>
+
+<h3>Links que dizem para onde vão</h3>
+<p>Um leitor de tela consegue listar todos os links da página. Se todos se chamam “clique aqui”, essa lista não ajuda ninguém. Por isso escrevi o destino dentro do próprio link.</p>
+<div class="par">
+  <div class="errado"><p>Evite</p><pre tabindex="0"><code>&lt;a href="tecnologia-assistiva.html"&gt;
+  Clique aqui
+&lt;/a&gt;</code></pre></div>
+  <div class="certo"><p>Prefira</p><pre tabindex="0"><code>&lt;a href="tecnologia-assistiva.html"&gt;
+  Tecnologia assistiva
+&lt;/a&gt;</code></pre></div>
+</div>
+
+<h3>Imagens com texto alternativo</h3>
+<p>Quem não vê a imagem precisa saber o que ela mostra. Descrevi o que importa em uma frase curta no atributo <code>alt</code>, sem repetir o que o texto ao redor já diz.</p>
+<div class="par">
+  <div class="errado"><p>Evite</p><pre tabindex="0"><code>&lt;img src="images/principios-wcag.svg"&gt;</code></pre></div>
+  <div class="certo"><p>Prefira</p><pre tabindex="0"><code>&lt;img src="images/principios-wcag.svg"
+  alt="Quadro com os quatro princípios
+  da WCAG: perceptível, operável,
+  compreensível e robusto."&gt;</code></pre></div>
+</div>
+
+<h3>Títulos em ordem</h3>
+<p>A tecla <kbd>H</kbd> do leitor de tela pula de título em título. Se eu pulasse do <code>h1</code> direto para o <code>h3</code>, a pessoa perderia a estrutura da página. Em cada página usei um só <code>h1</code> e desci um nível de cada vez.</p>
+<div class="par">
+  <div class="errado"><p>Evite</p><pre tabindex="0"><code>&lt;h1&gt;Barreiras no acesso&lt;/h1&gt;
+&lt;h3&gt;Cegueira&lt;/h3&gt;</code></pre></div>
+  <div class="certo"><p>Prefira</p><pre tabindex="0"><code>&lt;h1&gt;Barreiras no acesso&lt;/h1&gt;
+&lt;h2&gt;Cegueira&lt;/h2&gt;
+&lt;h3&gt;Como evitar&lt;/h3&gt;</code></pre></div>
+</div>
+
+<h3>Contraste entre texto e fundo</h3>
+<p>O eMAG pede pelo menos 4,5 para 1. Medi as combinações do site e o texto principal chega a 13,97 para 1. Também nunca deixei a cor sozinha: a página atual no menu ganha negrito e fundo, além da cor.</p>
+<div class="par">
+  <div class="errado"><p>Evite</p><pre tabindex="0"><code>color: #B9A89A;
+background: #FBF7F2;
+/* 2,16 para 1 */</code></pre></div>
+  <div class="certo"><p>Prefira</p><pre tabindex="0"><code>color: #33241B;
+background: #FBF7F2;
+/* 13,97 para 1 */</code></pre></div>
+</div>
+
+<h3>Foco visível no teclado</h3>
+<p>Quem navega com <kbd>Tab</kbd> precisa ver onde está. Em vez de esconder o contorno do foco, deixei um contorno grosso e com cor forte.</p>
+<div class="par">
+  <div class="errado"><p>Evite</p><pre tabindex="0"><code>a:focus {
+  outline: none;
+}</code></pre></div>
+  <div class="certo"><p>Prefira</p><pre tabindex="0"><code>:focus-visible {
+  outline: .22rem solid var(--foco);
+  outline-offset: .2rem;
+}</code></pre></div>
+</div>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="avaliar">Como avaliar a acessibilidade</h2>
+<p>O eMAG recomenda combinar ferramentas automáticas com a avaliação manual. Estes são alguns passos e ferramentas, todos em outros sítios:</p>
+<ol>
+  <li>Validar o código no <a href="https://validator.w3.org/">validador de HTML do W3C</a>.</li>
+  <li>Percorrer a página só com o teclado e com um leitor de tela.</li>
+  <li>Conferir o contraste no <a href="https://webaim.org/resources/contrastchecker/">verificador de contraste da WebAIM</a>.</li>
+  <li>Rodar um avaliador automático, como o <a href="https://wave.webaim.org/">WAVE</a>.</li>
+</ol>
+<p>Os avaliadores automáticos não encontram todos os problemas. Por isso a checagem manual é indispensável.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="mapa">Mapa do site</h2>
+<ul>
+  <li><a href="index.html">Início</a></li>
+  <li><a href="o-que-e-acessibilidade.html">O que é acessibilidade</a></li>
+  <li><a href="barreiras-e-deficiencias.html">Barreiras no acesso</a></li>
+  <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+  <li><a href="acessibilidade-no-dia-a-dia.html">No dia a dia</a></li>
+  <li><a href="acessibilidade-deste-site.html">Sobre este site</a></li>
+</ul>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+</div>
+</div>
+</main>
+<footer id="rodape" tabindex="-1">
+  <div class="miolo">
+    <p><strong>Acessibilidade para todos</strong> – trabalho do TDE de Programação WEB, feito por Brendha Bilharba Backes.</p>
+    <p>Textos baseados no material <em>eMAG Conteudista</em>, da Enap (Escola Nacional de Administração Pública).</p>
+    <p><a href="acessibilidade-deste-site.html">Sobre a acessibilidade deste site</a> e <a href="acessibilidade-deste-site.html#mapa">mapa do site</a>.</p>
+  </div>
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+</div>
+</body>
+</html>

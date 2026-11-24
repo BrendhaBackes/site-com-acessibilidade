@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-labelledby="t d">
+  <title id="t">Os quatro princípios da WCAG</title>
+  <desc id="d">Quatro blocos lado a lado: Perceptível, Operável, Compreensível e Robusto.</desc>
+  <rect width="800" height="260" fill="#FBF7F2"/>
+  <g font-family="Verdana, Arial, sans-serif" fill="#33241B" text-anchor="middle">
+    <rect x="12" y="30" width="184" height="200" rx="10" fill="#F7E4E2" stroke="#8A6B54" stroke-width="3"/>
+    <rect x="208" y="30" width="184" height="200" rx="10" fill="#EBDCCB" stroke="#8A6B54" stroke-width="3"/>
+    <rect x="404" y="30" width="184" height="200" rx="10" fill="#F7E4E2" stroke="#8A6B54" stroke-width="3"/>
+    <rect x="600" y="30" width="184" height="200" rx="10" fill="#EBDCCB" stroke="#8A6B54" stroke-width="3"/>
+    <text x="104" y="110" font-size="22" font-weight="700">Perceptível</text>
+    <text x="104" y="145" font-size="15">ver, ouvir ou ler</text>
+    <text x="300" y="110" font-size="22" font-weight="700">Operável</text>
+    <text x="300" y="145" font-size="15">usar com o teclado</text>
+    <text x="496" y="110" font-size="22" font-weight="700">Compreensível</text>
+    <text x="496" y="145" font-size="15">entender e prever</text>
+    <text x="692" y="110" font-size="22" font-weight="700">Robusto</text>
+    <text x="692" y="145" font-size="15">funcionar em tudo</text>
+  </g>
+</svg>

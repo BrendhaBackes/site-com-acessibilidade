@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acessibilidade no dia a dia – Acessibilidade para todos</title>
+<meta name="description" content="Textos sobre como a acessibilidade aparece na rua, nas compras, no estudo, no trabalho, no celular e nos vídeos.">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/acessibilidade.js" defer></script>
+</head>
+<body>
+<ul class="atalhos" aria-label="Atalhos de navegação">
+  <li><a href="#conteudo">Ir para o conteúdo (Alt+1)</a></li>
+  <li><a href="#menu">Ir para o menu (Alt+2)</a></li>
+  <li><a href="#rodape">Ir para o rodapé (Alt+3)</a></li>
+</ul>
+<header class="topo">
+  <div class="barra" role="region" aria-label="Barra de acessibilidade">
+    <div class="miolo">
+      <p>Acessibilidade:</p>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+      <button type="button" id="btn-diminuir">Diminuir fonte</button>
+      <button type="button" id="btn-aumentar">Aumentar fonte</button>
+      <button type="button" id="btn-restaurar">Fonte normal</button>
+      <button type="button" id="btn-ouvir" hidden>Ouvir esta página</button>
+      <button type="button" id="btn-pausar" hidden>Pausar leitura</button>
+      <a href="acessibilidade-deste-site.html#atalhos">Atalhos de teclado</a>
+    </div>
+  </div>
+  <div class="miolo">
+    <p class="marca"><a href="index.html">Acessibilidade para todos</a></p>
+    <nav id="menu" aria-label="Menu principal" tabindex="-1">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="o-que-e-acessibilidade.html">O que é acessibilidade</a></li>
+        <li><a href="barreiras-e-deficiencias.html">Barreiras no acesso</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="acessibilidade-no-dia-a-dia.html" aria-current="page">No dia a dia</a></li>
+        <li><a href="acessibilidade-deste-site.html">Sobre este site</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<p id="aviso" class="sr-only" role="status" aria-live="polite"></p>
+<main id="conteudo" tabindex="-1">
+<div class="faixa-titulo">
+  <div class="miolo">
+    <h1>Acessibilidade no dia a dia</h1>
+    <p class="lead">A acessibilidade não acontece só em sistemas especializados. Ela está em situações comuns, que todo mundo vive.</p>
+  </div>
+</div>
+<div class="miolo">
+<div class="texto">
+<nav class="sumario" id="sumario" aria-labelledby="t-sumario">
+  <h2 id="t-sumario">Neste texto</h2>
+  <ol>
+    <li><a href="#rua">Na rua e no transporte</a></li>
+    <li><a href="#compras">Em compras e serviços online</a></li>
+    <li><a href="#estudo-trabalho">No estudo e no trabalho</a></li>
+    <li><a href="#celular">No celular</a></li>
+    <li><a href="#videos">Em vídeos e reuniões</a></li>
+    <li><a href="#gestos">Pequenos gestos que ajudam</a></li>
+  </ol>
+</nav>
+
+<h2 id="rua">Na rua e no transporte</h2>
+<p>Uma calçada sem buracos, uma rampa bem inclinada e um piso tátil ajudam muito mais gente do que parece. Pessoas que usam cadeira de rodas, bengala ou carrinho de bebê, e quem tem uma perna engessada, dependem desses detalhes.</p>
+<p>O mesmo vale para a informação. Avisos sonoros e painéis visuais em estações e ônibus permitem que pessoas cegas e surdas saibam a próxima parada.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="compras">Em compras e serviços online</h2>
+<p>Pagar uma conta, marcar uma consulta ou comprar um produto pela internet pode dar autonomia. Mas só se o sítio funcionar para todas as pessoas.</p>
+<p>Uma pessoa cega que usa leitor de tela precisa que cada botão e cada campo tenha nome. Se o botão de comprar é só uma imagem sem texto alternativo, ela não consegue concluir a compra. Quem não usa mouse precisa chegar a todos os campos com a tecla <kbd>Tab</kbd>.</p>
+<p>Formulários acessíveis indicam com texto, e não só com cor, quais campos são obrigatórios. Também explicam o erro de forma clara, como “o CEP deve ter oito números”.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="estudo-trabalho">No estudo e no trabalho</h2>
+<p>Materiais de estudo em PDF escaneado, sem texto, não podem ser lidos por um leitor de tela. Um arquivo em HTML, ou com texto real, resolve o problema e ainda facilita a busca por palavras.</p>
+<p>No trabalho, reuniões com legenda e documentos com títulos bem organizados ajudam colegas com deficiência. Também ajudam quem chegou atrasado, quem está em um ambiente barulhento ou quem prefere ler a ouvir.</p>
+<p>As pessoas com deficiência são cidadãs que podem estudar, trabalhar e contribuir. A tecnologia deve facilitar esse caminho, não atrapalhar.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="celular">No celular</h2>
+<p>Telas pequenas e luz forte do sol tornam o contraste e o tamanho da letra ainda mais importantes. Por isso, quem usa o celular se beneficia das mesmas regras criadas para a baixa visão.</p>
+<p>Os celulares já trazem recursos de acessibilidade, como leitor de tela (VoiceOver nos aparelhos da Apple), aumento de letra e contraste. Para funcionar, os aplicativos e sítios precisam ser bem construídos.</p>
+<p>Pessoas idosas também ganham com botões grandes, textos simples e menus consistentes.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="videos">Em vídeos e reuniões</h2>
+<p>Vídeo sem legenda exclui pessoas surdas. Vídeo com muita informação visual e sem descrição exclui pessoas cegas. Há três recursos principais:</p>
+<ul>
+  <li><strong>Legenda:</strong> texto sincronizado com a fala.</li>
+  <li><strong>Audiodescrição:</strong> narração do que aparece na tela e não está nas falas.</li>
+  <li><strong>Libras:</strong> janela com intérprete da Língua Brasileira de Sinais.</li>
+</ul>
+<p>Além disso, vídeos e sons não devem começar sozinhos. A pessoa precisa poder iniciar, pausar e parar a mídia.</p>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+<h2 id="gestos">Pequenos gestos que ajudam</h2>
+<ul>
+  <li>Descreva as imagens que você publica nas redes sociais. A hashtag #PraCegoVer é usada para indicar esse tipo de descrição.</li>
+  <li>Escreva links que dizem para onde levam, como “edital do concurso 2025” em vez de “clique aqui”.</li>
+  <li>Use frases curtas e palavras comuns.</li>
+  <li>Não use só a cor para dar uma informação.</li>
+  <li>Legende os vídeos que você produz.</li>
+</ul>
+<div class="destaque">
+  <p>Quando a acessibilidade faz parte do projeto desde o início, ela custa pouco e atende muita gente. Veja como <a href="acessibilidade-deste-site.html">este site foi construído</a>.</p>
+</div>
+<p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+</div>
+</div>
+</main>
+<footer id="rodape" tabindex="-1">
+  <div class="miolo">
+    <p><strong>Acessibilidade para todos</strong> – trabalho do TDE de Programação WEB, feito por Brendha Bilharba Backes.</p>
+    <p>Textos baseados no material <em>eMAG Conteudista</em>, da Enap (Escola Nacional de Administração Pública).</p>
+    <p><a href="acessibilidade-deste-site.html">Sobre a acessibilidade deste site</a> e <a href="acessibilidade-deste-site.html#mapa">mapa do site</a>.</p>
+  </div>
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+</div>
+</body>
+</html>
